@@ -5,7 +5,7 @@ const formatDate = date => moment(date).format("DD MMM YYYY");
 
 const Greeting = (props) =>{
     return(
-    <div>{` ${props.user.firstName} ${props.user.lastName}. Was born ${formatDate(props.user.birthDate)} in ${props.firstName}`} </div>
+    <div>{` ${props.user.firstName} ${props.user.lastName}. Was born ${formatDate(props.user.birthDate)} in ${props.user.birthPlace}`} </div>
     )
 }
 
