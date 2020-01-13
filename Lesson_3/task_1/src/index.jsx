@@ -5,10 +5,14 @@ import "./search.scss";
 
 const rootElement = document.querySelector("#root");
 
-const Greeting = () => {
+
+
+
+
+const Greeting = (props) => {
   const element = (
     <div className="search">
-      <h1 className="search__title">Hello, Tom. What to search for you?</h1>
+      <h1 className="search__title">{`Hello, ${props.name}. What to search for you?`}</h1>
       <div className="search__field">
         <input type="text" className="search__input" />
         <button className="search__button">Search</button>
@@ -18,4 +22,4 @@ const Greeting = () => {
   return element;
 };
 
-ReactDOM.render(<Greeting />, rootElement);
+ReactDOM.render(<Greeting name="Tom" />, rootElement);
