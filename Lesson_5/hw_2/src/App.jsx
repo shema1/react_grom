@@ -1,11 +1,11 @@
 import React from "react";
-import Colors from "./Colors"
+import ColorPicker from "./ColorPicker"
 
 
 
 const App = () =>{
     return(
-        <Colors/>
+        <ColorPicker/>
 
     )
 }
