@@ -1,11 +1,11 @@
 import React from "react";
-import GoodButton from "./GoodButton"
+import Colors from "./Colors"
 
 
 
 const App = () =>{
     return(
-        <GoodButton/>
+        <Colors/>
 
     )
 }
