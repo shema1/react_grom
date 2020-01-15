@@ -1,11 +1,11 @@
 import React from "react";
-import Toggler from "./Toggler"
+import Colors from "./Toggler"
 
 
 
 const App = () =>{
     return(
-        <Toggler/>
+        <Colors/>
 
     )
 }
