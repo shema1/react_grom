@@ -13,9 +13,9 @@ class Toggler extends Component {
   }
 
   handleClick=()=>{
-    console.log(this.state.isToggleOn)
-    this.setState(state =>({
-      isToggleOn: !state.isToggleOn
+    console.log(this.state3.isToggleOn + "asdfsd")
+    this.setState(state3 =>({
+      isToggleOn: !state3.isToggleOn
     }))
   }
 
