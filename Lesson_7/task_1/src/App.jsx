@@ -1,8 +1,10 @@
 import React from "react";
-import Page from "./Page";
+import NumbersList from "./NumbersList";
 
+
+const numbers = [1,2,3,4,5]
 const App = () => {
-  return <Page />;
+  return <NumbersList numbers={numbers}/>;
 };
 
 export default App;
