@@ -1,12 +1,8 @@
 import React from "react";
-import Mailbox from "./Mailbox"
+import Mailbox from "./Mailbox";
 
+const App = () => {
+  return <Mailbox unreadMessages={["1", "1", "1", "1", "1", "1"]} />;
+};
 
-
-const App = () =>{
-    return(
-        <Mailbox unreadMessages={["1","1","1","1","1","1",]}/>
-    )
-}
-
-export default App
+export default App;

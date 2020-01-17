@@ -1,8 +1,8 @@
 import React from "react";
-import Auth from "./Auth";
+import Status from "./Status";
 
 const App = () => {
-  return <Auth />;
+  return <Status />;
 };
 
 export default App;
