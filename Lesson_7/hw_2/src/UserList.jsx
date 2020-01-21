@@ -20,13 +20,11 @@ class UsersList extends Component {
     });
   };
   render() {
-    const selectedUsers = [];
+
+    
     const startIndex = this.state.page * this.state.itemsPerPage;
 
-    for (let i = startIndex; i < this.state.itemsPerPage + startIndex; i++) {
-      if(i === this.props.users.length) break
-      selectedUsers.push(this.props.users[i]);
-    }
+    const selectedUser = this.props.users.slice(startIndex,  startIndex+ this.state.itemsPerPage)
 
     return (
       <div>
@@ -35,10 +33,10 @@ class UsersList extends Component {
           goNext={this.goNext}
           page={this.state.page}
           itemsPerPage={this.state.itemsPerPage}
-          users={this.props.users.length}
+          userCount={this.props.users.length}
         />
         <ul className="users">
-          {selectedUsers.map(user => (
+          {selectedUser.map(user => (
             <User key={user.id} {...user} />
           ))}
         </ul>

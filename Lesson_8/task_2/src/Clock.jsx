@@ -16,9 +16,9 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
-      this.interval = this.setState({
-        date: new Date()
+    this.interval =  setInterval(() => {
+      this.setState({
+        date: formatDate(this.props.offset)
       });
     }, 1000);
   }
