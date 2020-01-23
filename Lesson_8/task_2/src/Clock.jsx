@@ -27,13 +27,13 @@ class Clock extends Component {
   }
 
   render() {
-    const test = moment(this.state.date)
+    const time = moment(this.state.date)
       .utcOffset(this.props.offset)
       .format("HH:mm:ss");
     return (
       <div className="clock">
         <div className="clock__location">{this.props.location}</div>
-        <div className="clock__time">{test}</div>
+        <div className="clock__time">{time}</div>
       </div>
     );
   }
