@@ -27,3 +27,31 @@ const withDataLoader = (url) => {
 };
 
 export default withDataLoader;
+
+
+// const withDataLoader = (url) => (WrappedComponent) => {
+//     class Wrapper extends Component {
+//         constructor(props) {
+//             super(props);
+//             this.state = {
+//                 isLoading: true,
+//                 data: null,
+//             };
+//         }
+//         componentDidMount() {
+//             fetch(url)
+//                 .then((response) => {
+//                     return response.json();
+//                 })
+//                 .then((data) => this.setState({ data, isLoading: false }));
+//         }
+//         render() {
+//             const { isLoading, data } = this.state;
+//             if (isLoading) {
+//                 return <Spinner size={32} />;
+//             }
+//             return <WrappedComponent {...this.props} data={data} />;
+//         }
+//     }
+//     return Wrapper;
+// };
