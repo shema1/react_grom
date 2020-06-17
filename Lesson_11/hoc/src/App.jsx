@@ -3,11 +3,15 @@ import User from "./User";
 import City from "./City";
 import withDataLoader from "./withDataLoader";
 
-
 const App = () => {
-  const MyCity = withDataLoader(City, "https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/cities/1")
-  const SuperUser = withDataLoader(User, "https://api.github.com/users/octocat")
- 
+  const MyCity = withDataLoader(
+    "https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/cities/1"
+  )(City);
+
+  const SuperUser = withDataLoader("https://api.github.com/users/octocat")(
+    User
+  );
+
   return (
     <div className="page">
       <MyCity />

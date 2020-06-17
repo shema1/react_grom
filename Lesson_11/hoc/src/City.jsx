@@ -6,9 +6,8 @@ const City = ({ data }) => {
 
     return (
         <div className="city">
-            <div>work</div>
             <span className="city__temperature">{`${temperature} F`}</span>
-            <span className="city__name">{name}</span>
+            <span className="city__name">{name}</span> 
         </div>
     );
 };
